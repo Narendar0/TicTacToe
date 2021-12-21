@@ -6,7 +6,7 @@ function TicTacToe() {
     const [player, setPlayer] = useState('x')
     
     const changePlayer = (index) =>{
-        if(board[index] != '') return;
+        if(board[index] !== '') return;
         setBoard(board => {
          return board.map((val,i) =>{
         if(i === index) return player;
